@@ -1,0 +1,45 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+	"editor.formatOnSave": true,
+	"prettier.disableLanguages": ["html", "scss", "typescript"],
+	"[html]": {
+		"editor.formatOnSave": false
+	},
+	"prettier.tabWidth": 4,
+	"prettier.singleQuote": true,
+	"prettier.useTabs": true,
+	"prettier.printWidth": 120,
+	"csscomb.formatOnSave": true,
+	"csscomb.ignoreFilesOnSave": ["_settings.scss"],
+	"csscomb.preset": {
+		"remove-empty-rulesets": true,
+		"always-semicolon": true,
+		"color-case": "lower",
+		"block-indent": "\t",
+		"color-shorthand": false,
+		"element-case": "lower",
+		"eof-newline": true,
+		"quotes": "single",
+		"sort-order": [["$variable"], ["$include"], ["$include media"]],
+		"sort-order-fallback": "abc",
+		"space-before-colon": "",
+		"space-after-colon": " ",
+		"space-before-combinator": " ",
+		"space-after-combinator": " ",
+		"space-between-declarations": "\n",
+		"space-before-opening-brace": " ",
+		"space-after-opening-brace": "\n",
+		"space-after-selector-delimiter": "\n",
+		"space-before-selector-delimiter": "",
+		"space-before-closing-brace": "\n",
+		"strip-spaces": true
+	},
+	"files.exclude": {
+		"**/*.js": {
+			"when": "$(basename).ts"
+		},
+		"**/*.js.map": true,
+		"node_modules": true,
+		"dist": true
+	}
+}
